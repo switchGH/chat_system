@@ -13,7 +13,9 @@ router.post('/', function(req, res, next){
   let createdAt = moment().format('YYYY-MM-DD HH:mm:ss');
   //console.log(createdAt);
   let query = 'INSERT INTO boards (title, created_at) VALUES ("' + title + '", ' + '"' + createdAt + '")';
+  //console.log(query);
   connection.query(query, function(err, rows){
+    console.log(err);
     res.redirect('/');
   });
 });
