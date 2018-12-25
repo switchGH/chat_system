@@ -29,6 +29,9 @@
         <button type="submit" class="submit">投稿</button>
       </form>
       <a href="/" class="btn">トップへ戻る</a>
+      <% if(typeof user !== 'undefine') { %>
+        <span class="login-user"><%= user.user_name %>さんとしてログインしています</span>
+        <% } %>
     </dvi>
   </body>
 </html>

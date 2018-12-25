@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 const boardsRouter = require('./routes/boards');
 const registerRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
+const setUser = require('./model/setUser');
 
 var app = express();
 
@@ -28,12 +29,11 @@ app.use(session({
   saveUninitialized: true
 }));
 
-app.use('/', indexRouter);
+app.use('/', setUser, indexRouter);
 app.use('/users', usersRouter);
-app.use('/boards', boardsRouter);
+app.use('/boards', setUser, boardsRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
