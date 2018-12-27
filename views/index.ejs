@@ -10,14 +10,14 @@
   <body>
     <h1><%= title %></h1>
     <div class="wrapper">
+        <% layout('layout') %>
       <form action="/" method="post" class="board-form">
-        タイトル：<input type="text" name="title" class="input" required>
-        <br>
-        <br>
-        <button type="submit" class="submit">ボード作成</button>
+      タイトル: <input type="text" name="title" class="input" required><br>
+      <br>
+      <button type="submit" class="submit">ボード作成</button>
       </form>
       <ul class="main-list">
-        <% boardList.forEach(function(boardItem){ %>
+        <% boardList.forEach(function(boardItem) { %>
           <li class="main-list__item">
             <a href="/boards/<%= boardItem.board_id %>" class="board">
               <p class="board__title"><%= boardItem.title %></p>
@@ -26,9 +26,9 @@
           </li>
         <% }); %>
       </ul>
-      <% if (typeof user !== 'undefined') { %>
-        <span class="login-user"><%= user.user_name %>さんとしてログインしています</span>
-      <% } %>
+        <% if (typeof user !== 'undefined') { %>
+          <span class="login-user"><%= user.user_name %>さんとしてログインしています</span>
+        <% } %>
     </div>
   </body>
 </html>

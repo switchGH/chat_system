@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
+const engine = require('ejs-mate');//express4で使える
+//const engine = require('ejs-locals');//express3以降では使えない
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -15,6 +17,9 @@ const logoutRouter = require('./routes/logout');
 const setUser = require('./model/setUser');
 
 var app = express();
+
+// use ejs-locals for all ejs templates
+app.engine('ejs', engine);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
