@@ -92,8 +92,9 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 .main-title {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 .main-list__item {
     margin-top: 10px;
