@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   connection.query(query, function(err, rows){
     console.log(rows);
     res.render('index', {
-      title: 'チャットしよう',
+      title: '@channel',
       boardList: rows
     });
   });

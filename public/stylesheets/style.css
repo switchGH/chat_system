@@ -88,7 +88,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 */
 
 .wrapper {
-    padding: 10px 10px 37px;
+    padding: 10px 200px 37px;
 }
 .main-title {
     margin-bottom: 20px;
@@ -98,6 +98,12 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 .main-list__item {
     margin-top: 10px;
+    padding: 1.5em 2.5em;
+    margin: 2em 0;
+    color: #000000;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
 }
 .main-list__item:first-child {
     margin-top: 0;
@@ -106,7 +112,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     display: block;
     padding: 10px;
     border: 1px #ccc solid;
-    background-color: #fff;
+    background-color: rgb(150, 196, 223);
 }
 .board__title {
     margin-bottom: 5px;
@@ -131,11 +137,17 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     background-size: cover;
     background-position: center;
 }
+.message__user {
+    font-size: 14px;
+    color: rgb(24, 22, 22);
+    text-align: left;
+}
 .message__title {
+    font-size: 17px;
 }
 .message__date {
     font-size: 10px;
-    color: #ccc;
+    color: rgb(24, 22, 22);
     text-align: right;
 }
 .board-form {
