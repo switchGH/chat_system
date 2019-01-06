@@ -7,7 +7,7 @@ const session = require('express-session');
 const engine = require('ejs-mate');//express4で使える
 //const engine = require('ejs-locals');//express3以降では使えない
 
-var indexRouter = require('./routes/index');
+var boardListRouter = require('./routes/boardList');
 var usersRouter = require('./routes/users');
 const boardsRouter = require('./routes/boards');
 const registerRouter = require('./routes/register');
@@ -36,7 +36,7 @@ app.use(session({
   saveUninitialized: true
 }));
 
-app.use('/', setUser, indexRouter);
+app.use('/', setUser, boardListRouter);
 app.use('/users', usersRouter);
 app.use('/boards', setUser, boardsRouter);
 app.use('/register', registerRouter);

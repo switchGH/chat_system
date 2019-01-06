@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   let query = 'SELECT B.board_id, B.user_id, B.title, ifnull(U.user_name, \'名無し\') AS user_name, DATE_FORMAT(B.created_at, \'%Y年%m月%d日 %k時%i分%s秒\') AS created_at FROM boards B LEFT OUTER JOIN users U ON B.user_id = U.user_id ORDER BY B.created_at DESC';
   connection.query(query, function(err, rows){
     console.log(rows);
-    res.render('index', {
+    res.render('boardList', {
       title: '@channel',
       boardList: rows
     });
