@@ -91,13 +91,16 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     padding: 30px 200px 37px;
 }
 .main-title {
-    margin-bottom: 20px;
-    font-size: 70px;
+    margin: 20px 200px 20px 200px;
     font-weight: bold;
+    font-size: 70px;
+    color: #ffffff;/*文字色*/
+    background: rgb(122, 165, 230);
+    border: solid 5px rgb(97, 154, 238);/*線*/
+    border-radius: 20px;/*角の丸み*/
     text-align: center;
-    border-bottom: solid 3px black;
 }
-.main-list__item {
+/* .main-list__item {
     margin-top: 10px;
     padding: 1.5em 2.5em;
     margin: 2em 0;
@@ -108,6 +111,14 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 .main-list__item:first-child {
     margin-top: 0;
+} */
+.board-title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 3px black;
 }
 .baord-list {
 }
@@ -138,6 +149,20 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     border: 1px #ccc solid;
     background-color: #fff;
 }
+.message-list {
+}
+.message-list__item {
+    margin-top: 10px;
+    padding: 1.5em 2.5em;
+    margin: 2em 0;
+    color: #000000;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
+}
+.message-list__item:first-child {
+    margin-top: 0;
+}
 .message__image {
     display: block;
     margin-bottom: 10px;
@@ -163,6 +188,14 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     margin: 20px 0;
     text-align: center;
 }
+.login-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 3px black;
+}
 .login-user {
     position: fixed;
     bottom: 0;
@@ -171,6 +204,46 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     font-size: 12px;
     border: 1px #ccc solid;
     background-color: #fff;
+}
+.login-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 15px;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.login-btn:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+.register-title{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 3px black;
+}
+.register-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 15px;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.register-btn:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
 }
 .input {
     display: inline-block;
@@ -207,6 +280,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 .label {
   width: 100px;
+  font-weight: bold;
 }
 .btn {
     display: inline-block;

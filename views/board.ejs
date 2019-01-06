@@ -10,12 +10,12 @@
   <body>
     <dvi class="wrapper">
         <% layout('layout') %>
-       <p class="main-title"><%= title %></p>
+       <p class="board-title"><%= title %></p>
         <% if (messageList.length) { %>
           <div class="white-bg">
-            <ul class="main-list">
+            <ul class="message-list">
               <% messageList.forEach(function(messageItem) { %>
-                <li class="main-list__item">
+                <li class="message-list__item">
                   <div class="message">
                     <p class="message__user">:<%= messageItem.user_name %></p>
                     <p class="message__title"><%= messageItem.message %></p>
