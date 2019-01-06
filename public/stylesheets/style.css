@@ -95,6 +95,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     font-size: 70px;
     font-weight: bold;
     text-align: center;
+    border-bottom: solid 3px black;
 }
 .main-list__item {
     margin-top: 10px;
@@ -117,8 +118,10 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     margin: 2em 1em;
     display: block;
     padding: 10px;
-    border: 1px #ccc solid;
-    background-color: rgb(122, 212, 185);
+    border: 2px solid #996633; /*線の太さ・色*/
+    background-color: #fff; /*背景色*/
+    box-shadow: -2px 5px 5px #e8d3c7; /*影*/
+    border-radius: 20px; /*角の丸み*/
 }
 .board__title {
     margin-bottom: 5px;
@@ -209,7 +212,7 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     display: inline-block;
     padding: 5px;
     margin: 10px 0 0 10px;
-    border: 1px #ccc solid;
+    border: 2px rgb(49, 47, 47) solid;
     border-radius: 5px;
     background-color: #fff;
 }
