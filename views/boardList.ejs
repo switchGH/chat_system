@@ -12,6 +12,7 @@
     <div class="wrapper">
         <% layout('layout') %>
       <ul class="board-list">
+        <p>現在のボード数：<%= boardList.length %></p>
         <% boardList.forEach(function(boardItem) { %>
           <li class="board-list__item">
             <a href="/boards/<%= boardItem.board_id %>" class="board">
