@@ -14,6 +14,7 @@
         <% if (messageList.length) { %>
           <div class="white-bg">
             <ul class="message-list">
+              <p>現在のメッセージ数：<%= messageList.length %></p>
               <% messageList.forEach(function(messageItem) { %>
                 <li class="message-list__item">
                   <div class="message">
