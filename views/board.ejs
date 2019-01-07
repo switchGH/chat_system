@@ -37,6 +37,8 @@
         </form>
         <% if (typeof user !== 'undefined') { %>
           <span class="login-user"><%= user.user_name %>さんとしてログインしています</span>
+        <% }else{ %>
+          <span class="not-login-user">あなたはログインしていません</span>
         <% } %>
         <a href="/" class="btn">トップへもどる</a>
     </dvi>

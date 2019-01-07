@@ -91,13 +91,13 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     padding: 30px 200px 37px;
 }
 .main-title {
-    margin: 20px 200px 20px 200px;
+    margin: 20px 0px 20px 0px;
     font-weight: bold;
     font-size: 70px;
     color: #ffffff;/*文字色*/
     background: rgb(122, 165, 230);
-    border: solid 5px rgb(97, 154, 238);/*線*/
-    border-radius: 20px;/*角の丸み*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
     text-align: center;
 }
 /* .main-list__item {
@@ -202,8 +202,17 @@ input:-webkit-autofill, textarea:-webkit-autofill {
     right: 0;
     padding: 5px;
     font-size: 12px;
-    border: 1px #ccc solid;
-    background-color: #fff;
+    border: double 5px #4ec4d3;
+    background-color: rgb(172, 216, 236);
+}
+.not-login-user {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 12px;
+    border: double 5px #4ec4d3;
+    background-color: rgb(172, 216, 236);
 }
 .login-btn {
     display: inline-block;
