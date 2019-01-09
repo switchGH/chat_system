@@ -1,6 +1,0 @@
-# ignore node_modules
-*node_modules/
-
-# ignore setting db_file
-model/mysqlConnection.js
-
