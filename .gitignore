@@ -4,4 +4,7 @@
 # ignore setting db_file
 model/mysqlConnection.js
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f6d09dfcf395e0e8ec79028b76e221179b1ede7e
