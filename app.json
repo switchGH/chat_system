@@ -1,4 +1,7 @@
 {
-   "name": "app",
+   "name": "chatsystem",
    "script": "./bin/www",
+   "env": {
+	"PORT": 3001,	
+},
 }
